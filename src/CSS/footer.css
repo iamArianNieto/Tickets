@@ -1,0 +1,31 @@
+footer {
+    text-align: center;
+    border-top: 3px solid #BC955C;
+    background-color: #3f101d;
+    width: 100%;
+    z-index: auto;
+    height: 15% !important;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5%;
+    display:inline-flex !important;
+}
+
+footer p {
+    font-size: 1.0rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.escudoI {
+    width: 4.7%;
+    padding-top: 0.2% !important;
+    margin-left: 1%;
+}
+
+.escudoD {
+    width: 3.5%;
+    padding-top: -1%;
+    margin-right: 0.5%;
+}

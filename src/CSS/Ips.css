@@ -1,0 +1,511 @@
+/* Estilo para el contenedor principal*/ 
+.container {
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+/*gestor ip
+.gestor-ips {
+    text-align: left;
+}*/
+
+/* Estilo para la tabla
+
+.tabla-ips {
+    width: 1349px;
+    margin-left: -13%;
+    margin-right: 2%;
+} */
+/*gestor servidores
+
+.gestor-servidores {
+    text-align: left;
+}*/
+
+/* Estilo para la tabla 
+.custom-tabs-container {     
+}*/
+
+.tab-ips {
+  background-color: #f8f9fa !important;
+  padding: 15px !important;
+  border: 1px solid #dee2e6 !important;
+  border-radius: 5px !important;
+  margin-top: 10px !important;
+  color: #000 !important;
+}
+
+.tab-servidor {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.table-container {
+    margin: auto;
+    width: 50%; /* O el ancho deseado */
+  }  
+
+button:hover {
+    background-color: rgba(252, 252, 252, 0.096);
+}
+
+/* Estilo para la sección de filtros */
+.filter-section {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 20px !important;
+}
+
+/* Estilo para los elementos de filtro */
+.filter-section select {
+    /* margin-right: 0px !important;
+    padding: 0px !important;
+    border-radius: 0px !important;
+    border: 0px solid #ccc !important;
+    color: #080202a3 !important;
+    width: 0% !important;
+    max-width: 0% !important;
+    height: 0px !important;
+    padding: 0px !important;
+    font-size: 0px !important;
+    margin-top: 0% !important;
+    margin-left: 0% !important; */
+}
+
+.filter-section input[type="text"] {
+    padding: 5px !important;
+    flex: 1px !important;
+}
+
+/* Estilo para el botón de búsqueda */
+.filter-section button {
+    background-color: #681228 !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 5px 10px !important;
+    cursor: pointer !important;
+}
+
+/*espacio entre el boton de agregar y el titulo..*/
+ 
+.btn-space{
+    background-color: #681228 !important;
+    border-radius: 5px !important;
+    margin-left: 10px !important;
+    font-size: 12px !important;
+    padding: 9px 13px !important;
+}
+.filtrar-equipo-estado{
+    margin-left: 10% !important;
+}
+
+/* Estilo para el contenedor de la tabla 
+.data-section {
+    width: 709px;
+    height: 615px;
+    flex-shrink: 0;
+    background: rgba(217, 217, 217, 0.30);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}*/
+
+/* Estilo para el título de la tabla */
+.container-title {
+    text-align: center !important;
+    font-size: 1.5rem !important;
+    margin-bottom: 20px !important;
+}
+
+.segment-container{
+    margin-left: 10.4% !important;
+}
+
+/* Estilo para el botón "Agregar Segmentos" */
+.btn-container button {
+    background-color: #681228 !important;
+    color: #681228 !important;
+    border: none !important;
+    padding: 5px 10px !important;
+    cursor: pointer !important;
+}
+
+/* Estilo para el contenedor de segmentos */
+/* .segment-container {
+    background-color: #f0f0f0;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+} */
+
+/* Estilo para el título de segmentos */
+.segment-container .container-title {
+    text-align: center !important;
+    font-size: 1.5rem !important;
+    margin-bottom: 20px !important;
+}
+
+.custom-container {
+    margin-left: 72% !important;
+    margin-top: -585px !important;
+    background: #dfdedebd !important;
+    padding: 20px !important;
+    border-radius:10px !important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2) !important;
+    width: 600px !important;
+    height: 500px !important;
+}
+
+.separar{
+    padding-left: 3rem !important;
+}
+
+.Formulario-Navs{
+    padding-right: 1rem;
+    padding-left: 2rem;
+}
+
+/* Estilo para el contenedor de botones */
+.custom-button-container {
+    text-align: center !important; /* Centra los elementos horizontalmente */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+}
+
+/* Estilo para los botones dentro de .custom-container */
+.custom-container button {
+    margin: 5px !important;
+    display: inline-block !important;
+}
+
+
+/* Estilos para los botones dentro de .custom-container */
+.custom-container button {
+    margin: 5px !important;
+    display: inline-block !important;
+
+}
+
+/* Estilo para el botón "Guardar Cambios" */
+.save-button {
+    background-color: #681228 !important; /* Color azul */
+    color: #fff !important;
+    border-radius: 5px;
+    padding: 10px 20px !important;
+    cursor: pointer !important;
+    width: 20rem !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    font-size: 0.9rem !important;
+}
+
+.accordion{
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(131, 134, 138, 0.25) !important;
+}
+
+.accordion-button{
+    background-color: #f8f9fa !important;
+}
+
+/* Estilo para el botón "Cancelar" */
+.cancel-button {
+    background-color: #ababab !important; /* Color rojo */
+    color: #fff !important;
+    border-radius: 5px !important;
+    padding: 10px 20px !important;
+    cursor: pointer !important;
+    width: 20rem !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    font-size: 0.9rem !important;
+}
+
+/*.styleip {
+    width: 500px;
+}
+
+.stylehost {
+    width: 220px;
+}
+
+.stylearea {
+    width: 220px;
+}
+
+.stylesolicitante {
+    width: 220px;
+}
+
+.styleresponsable {
+    width: 220px;
+}
+
+.stylefecha {
+    width: 220px;
+}
+
+.stylelugar {
+    width: 220px;
+}
+
+.styleestado {
+    width: 220px;
+}
+
+.styleequipos {
+    width: 220px;
+}*/
+
+/*Iconos en imagenes.. de la tabla*/
+.image-icon {
+    max-width: 40px !important;
+    max-height: 40px !important
+  }
+.btn-imprimir{
+    background-color: #A02142 !important;
+    color: #fff !important;
+}
+
+.btn-imprimir:hover{
+    background-color: #DDC9A3 !important;
+    color: #fff !important;
+}
+
+.icono-buscar{
+    max-width: 80px !important;
+    max-height: 40px !important;
+    background-color: rgb(224 224 224) !important;
+    color: #fff !important;
+    border-radius: 5px !important;
+}
+
+.mx-2 {
+    /* margin-right: 0.5rem!important; */
+    margin-left: 0.5rem!important;
+}
+
+  /*PLECA*/
+.navbar {
+    background-color: #dfdedebd !important;
+    height: 80px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 14px !important;
+}
+
+.selecciona_segmentos{
+    display: flex !important;
+    min-width: 230px !important;
+    margin-left: -14px !important;
+    max-width: calc(100% - 0.5%) !important;
+    color: #080202a3 !important;
+    
+}
+
+.txt_segmento{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    margin-left: 1.2rem  !important;
+    max-width: calc(100% - 1.5%) !important;
+}
+
+.busqueda_ips{
+    display: flex !important;
+    justify-content: flex-end !important;
+    min-width: 200px !important;
+    margin-right: 10% !important;
+    max-width: calc(100% - 10%) !important;
+}
+
+.contenedor_formulario{
+    padding-bottom: 1rem !important;
+    padding-top: 1rem !important;
+}
+
+/*paginado*/
+select{
+    height: 15px ;
+    padding: 8px ;
+    font-size: 12px ;
+}
+
+/*select de segmentos */
+.segmentosselect{
+    height: 37px !important;
+    margin-top: 1px !important;
+    padding: 5px !important;
+    font-size: 12px !important;
+    margin-left: 0.9rem  !important;
+    display: block !important;
+    width: 100% !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    color: var(--bs-body-color) !important;
+    background-color: var(--bs-body-bg) !important;
+    background-clip: padding-box !important;
+    border: var(--bs-border-width) solid var(--bs-border-color) !important;
+    border-radius: 4px !important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+}
+
+/*fomrulario select*/
+.select_form{
+    height: 2.3rem;
+    padding: 5px !important;
+    font-size: 12px !important;
+    display: block !important;
+    width: 100% !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    color: var(--bs-body-color) !important;
+    background-color: var(--bs-body-bg) !important;
+    border: none;
+    border-bottom: var(--bs-border-width) solid #7e8083!important;
+    border-radius: 4px !important;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.select_form:focus {
+    outline: none; /* Eliminamos el borde de enfoque */
+    border-color: var(--bs-border-color); /* Restauramos el borde inferior en el enfoque */
+    box-shadow: none; /* Eliminamos cualquier sombra de enfoque */
+  }
+
+/*Filtros por estado y por equipo*/
+.filtros_select{
+    padding: 5px !important;
+    font-size: 12px !important;
+    display: block !important;
+    width: 100% !important;
+    height: 2.5rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    color: var(--bs-body-color) !important;
+    background-color: var(--bs-body-bg) !important;
+    background-clip: padding-box !important;
+    border: var(--bs-border-width) solid var(--bs-border-color) !important;
+    border-radius: 4px !important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+}
+
+.filtro_busqueda{
+    margin-top: 1.5rem;
+    padding: 5px !important;
+    margin-bottom: 1rem !important;
+    font-size: 12px !important;
+    display: block !important;
+    width: 90%;
+    height: 2.5rem !important;
+    line-height: 1.5 !important;
+    color: var(--bs-body-color) !important;
+    background-color: var(--bs-body-bg) !important;
+    background-clip: padding-box !important;
+    border: var(--bs-border-width) solid var(--bs-border-color) !important;
+    border-radius: 4px !important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out !important;
+}
+
+/*input del formulario*/
+.input_form{
+    display: block !important;
+    width: 100% !important;    
+    height: 2.3rem !important;
+    padding: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    color: var(--bs-body-color) !important;
+    appearance: none !important;
+    background-color: transparent !important;
+    border: none !important;
+    background-clip: padding-box !important;
+    border-bottom: var(--bs-border-width) solid #7e8083!important;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out !important;
+}
+.input_form:focus {
+    outline: none; /* Eliminamos el borde de enfoque */
+    border-color: var(--bs-border-color); /* Restauramos el borde inferior en el enfoque */
+    box-shadow: none; /* Eliminamos cualquier sombra de enfoque */
+  }
+
+/*input de busqueda*/
+.contenedor_segmentos{
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.btn-secondary {
+    background-color: #ababab !important;
+}
+
+/* Color para Agregar Segmento */
+.btn-primary {
+    background-color: #681228 !important;
+}
+
+/*TABLA DEL SISTEMAS*/
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+  }
+
+  .btn-guardar-sistema{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+.tabla-sistema{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%; /* Ajusta la altura según sea necesario */
+}
+.table {
+    width: 100% !important;
+    font-size: 0.8rem;
+}
+
+.table th {
+    background-color: #dac7a1;
+    color: white;
+    text-align: center;
+    border-color: #f8f9fa;
+   
+}
+
+.pagination a {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.70rem;
+}
+
+table{
+    width: 100%;
+}
+
+.displayflex{
+    display: flex;
+}
+
+.pagination .active a {
+    background-color: #f8f9fa;
+    color: black;
+}

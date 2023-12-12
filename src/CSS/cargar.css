@@ -1,0 +1,44 @@
+ /* .body-form {
+  background: #ffffff;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 5px 5px 10px #BABABA;
+  width: 80%;
+  height: auto; 
+  margin: 0px auto; 
+  padding: 5%;
+  z-index: 1;
+} */
+.body-form h3 {
+  font-size: 23px; 
+}
+
+.body-form h4 {
+  font-size: 18px; 
+}
+.custom-file-archivos {
+  background-color: #681228;
+  box-shadow: 2px 3px 7px #959595;
+  color: white;
+  font-size: 11px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.custom-file-archivos:hover {
+  background-color: #e4ccac;
+}
+
+.normal-text {
+  font-weight: normal;
+}
+
+.image-preview {
+  width: 200px; /* Establece el ancho deseado */
+  height: 150px; /* Establece el alto deseado */
+}
+
