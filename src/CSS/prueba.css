@@ -1,4 +1,430 @@
-*prueba.css+
+/* Abiertos.css */
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ticket-container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  padding-left: 1rem;
+}
+
+.ticket-list {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.ticket-list h1 {
+  margin-bottom: 21px;
+}
+
+.ticket-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ticket-list li {
+  border-radius: 18px;
+  box-shadow: 5px 5px 10px #ccc;
+  cursor: pointer;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-name {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.priority {
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+.badge.bg-danger,
+.badge.bg-warning,
+.badge.bg-success {
+  color: white;
+}
+
+.selected-ticket {
+  margin-bottom: 20px;
+}
+
+.selected-ticket .ticket-info {
+  display: flex;
+  align-items: center;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+button {
+  background-color: #003768;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: -1px;
+}
+
+button:hover {
+  background-color: #d6bc99;
+}
+
+/* Estilo del navbar */
+.ticket-navbar {
+  color: #fff;
+  text-align: center;
+  padding-top: 2.25rem;
+  padding-left: 2rem;
+  width: 100%;
+}
+
+.ticket-navbar h1 {
+  font-size: 18px;
+}
+.estatus-style {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  display: inline;
+  background-color: #f5f5f5;
+}
+
+
+.ticket-list {
+  margin-right: 20px;
+}
+
+.title_list {
+  font-size: 18px;
+  margin-right: 913px;
+  margin-top: -9%;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.table th {
+  background-color: #333;
+  color: white;
+}
+
+.table .table-primary {
+  background-color: #f0f8ff;
+}
+
+.pagination-container {
+  text-align: right;
+  /* Alineación a la derecha */
+  margin-top: 20px;
+}
+
+.pagination {
+  display: inline-block;
+  list-style: none;
+}
+
+.pagination li {
+  display: inline;
+  margin-right: 5px;
+}
+
+.pagination a {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: #333;
+}
+
+.pagination .active a {
+  background-color: #333;
+  color: white;
+}
+
+.pagination a span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.pagination a span:hover {
+  color: black;
+}
+
+.ticket-details {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  height: 30%;
+  width: 100%;
+  margin-top: 7%;
+}
+
+/* Estilo del título de los detalles del ticket */
+.ticket-details h2 {
+  font-size: 18px;
+}
+
+.ticket-details-container {
+  background-color: #fff;
+  border-radius: 4px;
+  flex: 1;
+  overflow: auto;
+  padding: 20px;
+  padding-top: 9px;
+  padding-bottom: 1px;
+  height: 96%;
+}
+
+.ticket-section {
+  margin: 10px 0;
+}
+
+.selected-row {
+  background-color: #e6f7ff;
+}
+
+.bold-title {
+  font-weight: bold;
+}
+
+/**/
+
+.left-column {
+  padding: 10px;
+  width: 39%;
+  float: left;
+}
+
+.middle-column {
+  padding: 10px;
+  width: 31%;
+  float: left;
+}
+
+.description-section {
+  clear: both;
+  padding: 10px;
+  max-height: 100px;
+  overflow-y: auto;
+  max-height: 160px;
+}
+
+.description-extended {
+  max-height: none;
+}
+
+.right-column {
+  padding: 10px;
+  width: 30%;
+  float: left;
+}
+
+.image-section {
+  clear: both;
+}
+
+.wide-textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  resize: vertical;
+}
+
+
+.title_detalles {
+  text-align: center;
+  border-bottom: solid;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.btn-pdf {
+  background: #630042;
+  box-shadow: 6px 4px 5px #959595;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.btn-doc {
+  background: #630042;
+  box-shadow: 6px 4px 5px #959595;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+
+/*Modal*/
+
+.modal-content {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 4%;
+  position: relative;
+}
+
+/* Estilo para el botón de cierre (X) */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.close-icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.preview-image {
+  max-width: 80%;
+  max-height: 80vh;
+  display: block;
+  margin: 0 auto;
+}
+
+/*Modal*/
+
+.modal-background {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #dfdedebd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-modal-content {
+  background: #fff;
+  padding: 38px;
+  width: 20%;
+  height: 26%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.addserver {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  color: #080202a3;
+  width: 59%;
+  height: 39px;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.modal-buttons {
+  margin-top: 3px;
+}
+
+.buttonModalSave {
+  background: #681228 !important;
+  border: 0;
+  padding: 3px 20px;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 10rem;
+  height: 35px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.buttonModalClose {
+  margin-left: 15%;
+  margin-bottom: 2%;
+  font-size: 14px;
+  border: 0;
+  padding: 3px 20px;
+  border-radius: 6px;
+  width: 10rem;
+  height: 35px;
+  background: #ababab !important;
+  color: #fff;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.titleModal {
+  font-size: 24px;
+}
+
+.navbarTitle {
+  background-color: #e0e0e0;
+  height: 50px;
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  /* Centra verticalmente */
+  font-size: 14px;
+  text-align: center;
+}
+
+.navbarTitle H3 {
+  margin-bottom: 0 !important;
+}
+
+.menu-open {
+  margin-left: 250px;
+  /* Ajusta el valor según el ancho de tu menú */
+}
+
+/*tabla de notas*/*prueba.css+
 /* Abiertos.css */
 .app {
   display: flex;

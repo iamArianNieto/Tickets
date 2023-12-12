@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from '../components/Footer/footer.js'
+import Footer from '../components/Footer/footer'
 import Login from './login'
 export default function Inicio() {
   return (
@@ -9,3 +9,5 @@ export default function Inicio() {
    </>
   )
 }
+
+

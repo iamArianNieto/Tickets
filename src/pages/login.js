@@ -31,6 +31,15 @@ function LoginForm() {
       return;
     }
 
+    if (USUARIO === PWD) {
+      Swal.fire({
+        icon: 'error',
+        title: envs.ERROR_AUTENTICACION,
+        text: envs.TEXT_AUTENTICACION,
+      });
+      return;
+    }
+
     try {
       const usuario = USUARIO;
       const contrasena = PWD;
@@ -50,26 +59,66 @@ function LoginForm() {
 
       if (response.ok) {
         const data = await response.json();
-        const { Nombre, Privilegio } = data[0];
+        console.log('Respuesta del servicio:', data);
+
+        if (data.length === 0) {
+          Swal.fire({
+            icon: 'error',
+            title: envs.ERROR_AUTENTICACION,
+            text: envs.TEXT_AUTENTICACION,
+          });
+          return;
+        } else if (data[0].Final === "CONTRASEÑA INCORRECTA") {
+          Swal.fire({
+            icon: 'error',
+            title: envs.PSW_INCORRECTA,
+            text: envs.TEXT_INCORRECTAPSW,
+          });
+          return;
+        } else if (data[0].Final === "USUARIO INCORRECTO") {
+          Swal.fire({
+            icon: 'error',
+            title: envs.USER_INCORRECTA,
+            text: envs.TEXT_INCORRECTAUSER,
+          });
+          return;
+        }
+
+        const { Nombre, Privilegio, Id_areaOmuni, Id_subcentro } = data[0];
 
         console.log('Usuario:', usuario);
         console.log('USUARIO:', USUARIO);
+
         console.log('Privilegio:', Privilegio);
         console.log('USUARIO_NOMBRE:', Nombre);
+        console.log('USUARIO:', Nombre);
+        console.log('USUARIO_SUBCENTRO:', Id_subcentro);
 
         sessionStorage.setItem('USUARIO', usuario);
         sessionStorage.setItem('PRIVILEGIO', Privilegio);
         sessionStorage.setItem('USUARIO_NOMBRE', Nombre);
+        sessionStorage.setItem('USUARIO_AREA', Id_areaOmuni);
+        sessionStorage.setItem('USUARIO_SUBCENTRO', Id_subcentro);
 
-        // Redirige al usuario según su nivel de privilegio.
-        if (Privilegio === 4) { //adminstrador por area
+        // Redirige al usuario según su nivel de privilegio. 
+        if (Privilegio === 4) { //ADMINISTRADOR POR AREA (DT) 
           navigate('/ip');
-        } else if (Privilegio === 5) { //usuario general
-          navigate('/tickets', { state: { privilege: Privilegio } });
-        } else if (Privilegio === 2) { // Administrador del sistema
-          navigate('/tickets', { state: { privilege: Privilegio } });
+        } else if (Privilegio === 5) {//USUARIO GENERAL - NO AGREGA SERVICIO
+          navigate('/tickets', { state: { privilege: Privilegio, USUARIO: usuario } });
+        } else if (Privilegio === 2 || Id_areaOmuni === 6) {//ADMINISTRADOR GENERAL - AGREGA SERVICIO 
+          navigate('/tickets', {
+            state: {
+              privilege: Privilegio,
+              usuarioNombre: Nombre,
+              USUARIO: usuario,
+              usuarioArea: Id_areaOmuni,
+              usuarioSubcentro: Id_subcentro
+            },
+          });
         } else {
+          // Si no se redirige, puedes manejarlo aquí.
         }
+
         console.log('Acceso correcto');
       } else if (response.status === 401) {
         console.error('Credenciales incorrectas');
@@ -78,13 +127,12 @@ function LoginForm() {
           text: envs.TEXT_INCOCREDENCIALES,
           icon: 'error',
         });
-
       } else {
         console.error('Error de inicio de sesión');
         Swal.fire({
           icon: 'error',
           title: envs.INICIOSESION_ERROR,
-          html: envs.TEXT_INICIOSESION,
+          text: envs.TEXT_INICIOSESION,
         });
       }
     } catch (error) {
@@ -133,7 +181,7 @@ function LoginForm() {
                         />
                       </div>
                       <br />
-                      <button id='btn_IngresarLogin' className="btn_Ingresar" type="button" onClick={IngresarLogin}>
+                      <button id='btn_IngresarLogin' className="btn" type="button" onClick={IngresarLogin}>
                         Ingresar
                       </button>
                       <br />
@@ -159,8 +207,6 @@ function LoginForm() {
           </div>
         </div>
       </div>
-
-
     </div>
   );
 }

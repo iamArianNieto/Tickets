@@ -61,7 +61,7 @@ const SubMenu = ({ item }) => {
   return (
     <>
       <SidebarLink to={item.path} onClick={item.subNav && showSubnav}>
-        <IconWrapper> {/* Envuelve el ícono en un div */}
+        <IconWrapper> 
           {item.icon}
         </IconWrapper>
         <SidebarLabel>{item.title}</SidebarLabel>
@@ -70,7 +70,7 @@ const SubMenu = ({ item }) => {
         item.subNav.map((item, index) => {
           return (
             <DropdownLink to={item.path} key={index}>
-              <IconWrapper> {/* Envuelve el ícono en un div */}
+              <IconWrapper> 
                 {item.icon}
               </IconWrapper>
               <SidebarLabel>{item.title}</SidebarLabel>

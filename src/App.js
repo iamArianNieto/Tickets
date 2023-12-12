@@ -10,25 +10,34 @@ import Estadisticas from './pages/Estadisticas';
 import Inicio from './pages/Inicio';
 import IP from './pages/Ipinicial';
 
+
+
+
 function App() {
   const location = useLocation();
-  const showSidebarRoutes = ['/tickets', '/abiertos', '/cerrados', '/admin', '/estadisticas', '/ip'];
+  const showSidebarRoutes = ['/tickets', '/abiertos', '/cerrados', '/ayuda', '/estadisticas', '/ip'];
   const shouldShowSidebar = showSidebarRoutes.includes(location.pathname);
-  const usuarioNombre = sessionStorage.getItem('USUARIO_NOMBRE');
+  const { state: routeState } = location;
 
+  const usuarioNombre = sessionStorage.getItem('USUARIO_NOMBRE');
+  const usuarioArea = sessionStorage.getItem('USUARIO_AREA');
+  const usuarioAreaDes = sessionStorage.getItem('USUARIO_AREADES');
 
 
   return (
     <div>
-      {shouldShowSidebar && <Sidebar usuarioNombre={usuarioNombre} />}
+      {shouldShowSidebar && <Sidebar usuarioNombre={usuarioNombre}  />}
       <Routes>
         {/* Ruta de inicio de sesión */}
         <Route path='/' element={<Inicio/>} />
         {/* Otras rutas */}
-        <Route path="/tickets" element={<Tickets />} />
-        <Route path='/abiertos' element={<Abiertos />} />
-        <Route path='/cerrados' element={<Cerrados />} />
-        <Route path='/admin' element={<Administracion />} />
+         <Route
+          path="/tickets"
+          element={<Tickets usuarioNombre={routeState?.usuarioNombre} usuarioArea={routeState?.usuarioArea} usuarioAreaDes={routeState?.usuarioAreaDes} />}
+        />
+        <Route path='/abiertos' element={<Abiertos usuarioArea={routeState?.usuarioArea} usuarioAreaDes={routeState?.usuarioAreaDes} />} />
+        <Route path='/cerrados' element={<Cerrados usuarioArea={routeState?.usuarioArea} usuarioAreaDes={routeState?.usuarioAreaDes} />} />
+        <Route path='/ayuda' element={<Ayuda />} />
         <Route path='/estadisticas' element={<Estadisticas />} />
         <Route path='/ip' element={<IP />} />
       </Routes>

@@ -3,18 +3,17 @@ footer {
     border-top: 3px solid #BC955C;
     background-color: #3f101d;
     width: 100%;
-    z-index: auto;
-    height: 15% !important;
     color: white;
     justify-content: space-between;
     align-items: center;
     margin-top: 2.5%;
-    display:inline-flex !important;
+    display: inline-flex !important;
 }
 
 footer p {
-    font-size: 1.0rem;
-    font-weight: bold;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    line-height: 1.45rem;
     text-align: center;
 }
 
@@ -28,4 +27,26 @@ footer p {
     width: 3.5%;
     padding-top: -1%;
     margin-right: 0.5%;
+}
+
+/*DESAPARECER EL FOOTER
+@media screen and (max-width: 767px) {
+    footer {
+        display: none;
+    }
+}*/
+
+/*BAJAR EL FOOTER*/
+@media (max-width: 600px) {
+    footer {
+        position: relative !important;
+        height: 20%;
+        z-index: 999;
+        bottom: 0px;
+    }
+
+    .escudoI,
+    .escudoD {
+        width: 10%;
+    }
 }

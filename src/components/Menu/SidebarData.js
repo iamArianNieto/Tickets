@@ -5,6 +5,8 @@ import * as MdIcons from 'react-icons/md';
 import * as TbIcons from 'react-icons/tb';
 import * as FaIcons from 'react-icons/fa';
 
+
+
 export const SidebarData = [
   
   {
@@ -23,13 +25,7 @@ export const SidebarData = [
     icon: <BiIcons.BiWindowClose />,
   },
   {
-    title: 'Administración',
-    path: '/admin',
-    icon: <MdIcons.MdAdminPanelSettings />,
-    
-  },
-  {
-    title: 'Estadisticas', 
+    title: 'Dashboard', 
     path: '/estadisticas',
     icon: <MdIcons.MdOutlineAnalytics />,
   },
@@ -39,9 +35,19 @@ export const SidebarData = [
     icon: <TbIcons.TbNetwork />,
   },
   {
+    title: 'Ayuda',
+    path: '/ayuda',
+    icon: <MdIcons.MdOutlineLiveHelp />,
+    
+  },
+  {
     title: 'Cerrar Sesion', 
     path: '/',
     icon: <FaIcons.FaSignInAlt/>,
   },
 
 ];
+
+
+
+

@@ -7,9 +7,10 @@ import SubMenu from './SubMenu.js';
 import { IconContext } from 'react-icons/lib';
 
 const Nav = styled.div`
-  background: #520d20;
-  height: 80px;
+  background: #3f101d;
+  height: 70px;
   display: flex;
+  z-index: 1;
   justify-content: flex-start;
   align-items: center;
 `;
@@ -32,7 +33,7 @@ const CloseIcon = styled(AiIcons.AiOutlineClose)`
 `;
 
 const SidebarNav = styled.nav`
-  background: #520d20;
+  background: #3f101d;
   width: 250px;
   height: 100vh;
   display: flex;
@@ -59,7 +60,7 @@ const UserName = styled.div`
   font-weight: bold;
 `;
 
-const Sidebar = ({shouldShowSidebar,usuarioNombre }) => {
+const Sidebar = ({ shouldShowSidebar, usuarioNombre }) => {
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
 
@@ -82,7 +83,20 @@ const Sidebar = ({shouldShowSidebar,usuarioNombre }) => {
               <CloseIcon onClick={showSidebar} />
             </NavIcon>
             {SidebarData.map((item, index) => {
-              return <SubMenu item={item} key={index} />;
+              let subarea = sessionStorage.getItem('USUARIO_AREA');
+
+              if (subarea === "6") {
+                //console.log("subarea -->"+subarea + " item --> "+item.title+" index---->"+index);
+                return <SubMenu item={item} key={index} />;
+
+              }
+              else {
+                if (item.title !== "IP") {
+                  // console.log("subarea -->"+subarea + " item --> "+item.title+" index---->"+index);
+                  return <SubMenu item={item} key={index} />;
+                }
+
+              }
             })}
           </SidebarWrap>
         </SidebarNav>
