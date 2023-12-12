@@ -1,0 +1,60 @@
+.manual-container {
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+}
+
+.nav-tabs {
+  margin-top: 20px;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.nav-link {
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-link.active {
+  color: #3f101d !important;
+}
+
+.module-content {
+  margin: 20px 0;
+}
+
+.module-content h2 {
+  color: #3f101d !important;
+}
+
+.module-content p {
+  margin-bottom: 10px;
+}
+
+.section p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #4c4c4c;
+  text-align: left;
+  font-weight: 400;
+  padding: 16px 0;
+}
+
+.section h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.section {
+  margin: auto;
+  display: block;
+  text-align: center;
+  padding: 60px 0 0;
+  background-color: #fff;
+}
+
+.compress-width {
+  width: 73rem;
+}

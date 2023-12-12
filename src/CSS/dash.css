@@ -1,0 +1,92 @@
+.graficas-principales {
+    text-align: center;
+    padding-top: 1.6rem;
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+    width: 100%;
+}
+
+.graficas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graficas-container .card {
+    margin: 10px;
+    padding: 20px;
+}
+
+.graficas-container canvas {
+    height: 15rem !important;
+    width: 15rem !important;
+}
+
+.graficas-container-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graficas-container-line .card {
+    margin: 10px;
+    padding: 20px;
+}
+.graficas-container-line canvas {
+    height: 15rem !important;
+    width: 25rem !important;
+}
+.container-grafica-total {
+    padding-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grafica-total {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grafica-total .card {
+    margin: 10px;
+    padding: 20px;
+}
+
+.grafica-total canvas {
+    height: 27rem !important;
+    width: 28rem !important;
+}
+
+.ticket-navbar-dash {
+    color: #fff;
+    text-align: center;
+    padding-left: 6.5rem;
+    padding-right: 1.5rem;
+    width: 100%;
+}
+.title_detalles-cerrados {
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.nav-dash{
+    justify-content: center !important;
+    padding-bottom: 1rem!important;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.ticket-container-dash{
+    width: 100%;
+    overflow: hidden;
+    padding-left: 0.5rem;
+    margin-top: -2.4rem;
+}

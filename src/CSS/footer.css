@@ -1,0 +1,52 @@
+footer {
+    text-align: center;
+    border-top: 3px solid #BC955C;
+    background-color: #3f101d;
+    width: 100%;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5%;
+    display: inline-flex !important;
+}
+
+footer p {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    line-height: 1.45rem;
+    text-align: center;
+}
+
+.escudoI {
+    width: 4.7%;
+    padding-top: 0.2% !important;
+    margin-left: 1%;
+}
+
+.escudoD {
+    width: 3.5%;
+    padding-top: -1%;
+    margin-right: 0.5%;
+}
+
+/*DESAPARECER EL FOOTER
+@media screen and (max-width: 767px) {
+    footer {
+        display: none;
+    }
+}*/
+
+/*BAJAR EL FOOTER*/
+@media (max-width: 600px) {
+    footer {
+        position: relative !important;
+        height: 20%;
+        z-index: 999;
+        bottom: 0px;
+    }
+
+    .escudoI,
+    .escudoD {
+        width: 10%;
+    }
+}
